@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+
+import Scheduler from './components/scheduler'
+import Week from './components/week'
+import Day from './components/day'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Run Schedule Tool</h1>
+      <Scheduler />
+      <p><strong>+</strong> add another week</p>
     </div>
   );
 }
