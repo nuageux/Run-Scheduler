@@ -21,6 +21,7 @@ function Scheduler() {
                 <Week />
                 <Week />
             </table>
+            <p><strong>+</strong> add another week</p>
         </div>
     )
 }

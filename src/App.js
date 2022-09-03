@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <h1>Run Schedule Tool</h1>
       <Scheduler />
-      <p><strong>+</strong> add another week</p>
     </div>
   );
 }

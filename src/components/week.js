@@ -5,13 +5,13 @@ import Day from './day'
 function Week() {
     return (
         <tr className="week-row">
-            <Day />
-            <Day />
-            <Day />
-            <Day />
-            <Day />
-            <Day />
-            <Day />
+            <Day miles="❌" colorStatus=""/>
+            <Day miles="❌"/>
+            <Day miles={7}/>
+            <Day miles={7}/>
+            <Day miles={7}/>
+            <Day miles="❌"/>
+            <Day miles={7}/>
         </tr>
     )
 }
