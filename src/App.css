@@ -5,6 +5,7 @@
 body {
   margin: 0;
   background-color: rgb(255, 233, 233);
+  font-family: 'Space Mono', monospace;
 }
 
 .App {
@@ -32,6 +33,14 @@ tr.week-row > td {
 
 p > strong {
   font-size: 30px;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: azure;
+  bottom: 0;
 }
 
 /*
