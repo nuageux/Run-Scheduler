@@ -8,12 +8,13 @@ function Day (props) {
     const [status, setStatus] = useState(0)
     const cellColor = {backgroundColor: colorCycle[status]}
 
-    let boxValue;
+    let showBox 
     if (status == 0)
-        boxValue = '✖️'
+        showBox = { visibility: 'hidden' }
     else
-        boxValue = <input type="number" onClick={(e) => {e.stopPropagation()}} />
-
+        showBox = {visibility: 'visible'}
+    let boxValue = <input type="number" style={ showBox } onClick={(e) => {e.stopPropagation()}} />
+    
     const handleClick = (e) => {
         e.stopPropagation()
     }

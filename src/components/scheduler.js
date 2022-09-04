@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import Week from './week'
 
 function Scheduler() {
+    const [weeks, setWeeks] = useState([<Week />])
     return (
         <div>
             <p>let's set up a run plan! 😄</p>
@@ -17,11 +18,11 @@ function Scheduler() {
                     <th>fri</th>
                     <th>sat</th>
                 </tr>
-                <Week />
-                <Week />
-                <Week />
+                {weeks}
             </table>
-            <p><strong>+</strong> add another week</p>
+            <button className="addWeek" onClick={() => {
+                setWeeks(weeks.concat(<Week />))
+            }}><strong>+</strong> add another week</button>
         </div>
     )
 }
