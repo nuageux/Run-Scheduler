@@ -1,20 +1,30 @@
 import React, {useState} from 'react'
 
-// grey = rest day, green = completion, blue = incomplete, red = didn't run
-const colorCycle = ['gainsboro', '#8FD5A6', '#BCC4DB', '#EF6F6C']
+// [0]grey = rest day, [1]blue = planned, [2]green = complete, [3]red = didn't run
+const colorCycle = ['gainsboro', '#BCC4DB', '#8FD5A6', '#EF6F6C']
 
 // getter
 function Day (props) {
-    const [color, setColor] = useState(0)
+    const [status, setStatus] = useState(0)
+    const cellColor = {backgroundColor: colorCycle[status]}
 
-    const cellColor = {backgroundColor: colorCycle[color]}
+    let boxValue;
+    if (status == 0)
+        boxValue = '✖️'
+    else
+        boxValue = <input type="number" onClick={(e) => {e.stopPropagation()}} />
+
+    const handleClick = (e) => {
+        e.stopPropagation()
+    }
 
     return (
         <td 
             class="day-data" 
             style={cellColor}
-            onClick={() => setColor((prevColor) => (prevColor+1)%colorCycle.length)}>
-                {props.miles}</td>
+            onClick={() => setStatus((prevStatus) => (prevStatus+1)%colorCycle.length)}>
+            {boxValue}
+        </td>
     )
 }
 

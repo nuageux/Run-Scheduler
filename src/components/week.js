@@ -3,15 +3,17 @@ import React from 'react'
 import Day from './day'
 
 function Week() {
+    let milage = 0  //"✖️"
+
     return (
         <tr className="week-row">
-            <Day miles="❌" colorStatus=""/>
-            <Day miles="❌"/>
-            <Day miles={7}/>
-            <Day miles={7}/>
-            <Day miles={7}/>
-            <Day miles="❌"/>
-            <Day miles={7}/>
+            <Day miles={milage} />
+            <Day miles={milage} />
+            <Day miles={milage} />
+            <Day miles={milage} />
+            <Day miles={milage} />
+            <Day miles={milage} />
+            <Day miles={milage} />
         </tr>
     )
 }

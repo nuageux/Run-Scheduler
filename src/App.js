@@ -10,7 +10,7 @@ function App() {
       <h1>Run Schedule Tool</h1>
       <Scheduler />
       <footer>
-        <p>made by Andrew Uhm</p>
+        <p>made by Andrew Uhm with React.js</p>
         <p>contact me at <a href="mailto:uhmjiwoon@gmail.com">uhmjiwoon@gmail.com</a></p>
       </footer>
     </div>

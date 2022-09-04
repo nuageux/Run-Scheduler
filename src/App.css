@@ -6,6 +6,7 @@ body {
   margin: 0;
   background-color: rgb(255, 233, 233);
   font-family: 'Space Mono', monospace;
+  user-select: none;
 }
 
 .App {
@@ -29,6 +30,7 @@ tr.week-row > td {
   width: 100px;
   border-radius: 5px;
   background-color: bisque;
+  font-size: x-large;
 }
 
 p > strong {
@@ -41,6 +43,22 @@ footer {
   text-align: center;
   background-color: azure;
   bottom: 0;
+}
+
+input {
+  width: 50px;
+  font-family: 'Space Mono', monospace;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .70);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /*
