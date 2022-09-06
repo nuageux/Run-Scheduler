@@ -5,7 +5,6 @@ import Day from './day'
 function Week() {
     const days = new Array(7).fill(<Day />)
     let milage = 0  //"✖️"
-    console.log('HI HELLOP HI')
     console.log(days[4].milage)
 
     return (
