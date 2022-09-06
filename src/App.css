@@ -18,6 +18,11 @@ body {
   margin-right: auto;
 }
 
+.intro {
+  font-size: 15px;
+  line-height: 3px;
+}
+
 tr.header > th {
   height: 50px;
   width: 100px;

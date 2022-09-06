@@ -6,7 +6,11 @@ function Scheduler() {
     const [weeks, setWeeks] = useState([<Week />])
     return (
         <div>
-            <p>let's set up a run plan! 😄</p>
+            <div className="intro">
+                <p>click on day squares to enter in the milage planned for that day.</p>
+                <p>blue indicates 'planned', green 'complete', red 'missed'.</p>
+                <p>leave grey squares blank for off days 😄</p>
+            </div>
             <table className="main-schedule">
                 {/* ideally each row is a Week component. */}
                 <tr className='header'>
